@@ -12,8 +12,8 @@ http://localhost:8090/swagger-ui.html#
 
 
 # Docker packaging
+mvn clean install
 docker build --tag zoo-app .
-
 docker run -p 8080:8090 -t zoo-app --name zoo-app
 
 Access the application using URL : http://192.168.99.100:8080/api/room
